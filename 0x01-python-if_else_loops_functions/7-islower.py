@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-#Task 7-islower.py
-
 
 def islower(c):
     """Check for lowercase characters."""
