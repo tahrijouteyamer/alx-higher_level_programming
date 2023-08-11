@@ -10,9 +10,3 @@ def magic_calculation(a, b):
         return (c)
     else:
         return sub(a, b)
-...........................................................
-vi 103-fast_alphabet.py
-
-#!/usr/bin/python3
-import string
-print(string.ascii_uppercase)
