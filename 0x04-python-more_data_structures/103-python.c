@@ -2,8 +2,8 @@
 #include <Python.h>
 
 /**
- * print_python_bytes - prints the bytes of information
- * @p: the Python object
+ * print_python_bytes - this prints the bytes information
+ * @p: the Python Object
  * Return: nothing
  */
 void print_python_bytes(PyObject *p)
@@ -41,8 +41,8 @@ void print_python_bytes(PyObject *p)
 }
 
 /**
- * print_python_list - prints the list of informations
- * @p: the Python object
+ * print_python_list - this prints list information
+ * @p: the python Object
  * Return: nothing
  */
 void print_python_list(PyObject *p)
@@ -65,3 +65,4 @@ void print_python_list(PyObject *p)
 		if (PyBytes_Check(obj))
 			print_python_bytes(obj);
 	}
+}
