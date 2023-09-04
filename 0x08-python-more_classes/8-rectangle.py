@@ -1,24 +1,24 @@
 #!/usr/bin/python3
-"""Module 8-rectangle
+"""Task 8-rectangle
 """
 
 
 class Rectangle:
-    """Rectangle class defination.
+    """The rectangle class definition
     """
 
     number_of_instances = 0
     print_symbol = '#'
 
     def __init__(self, width=0, height=0):
-        """Initializes a Rectangle instance in a contructor.
+        """It initializes a Rectangle instance in a contructor.
         """
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
 
     def __str__(self):
-        """Returns an informal string representation.
+        """It returns an informal string representation.
         """
         if self.__height == 0 or self.__width == 0:
             return ''
@@ -41,7 +41,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Retrieves the width of a Rectangle instance."""
+        """It retrieves the width of a Rectangle instance."""
         return self.__width
 
     @width.setter
