@@ -2,6 +2,7 @@
  * File: 102-python.c
  */
 
+#include <stdio.h>
 #include "Python.h"
 
 /**
