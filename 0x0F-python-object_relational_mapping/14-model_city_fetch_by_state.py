@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" prints the State object with the name passed as argument from the database
+""" model_city.py that contains the class definition of a City
 """
 import sys
 from model_state import Base, State
@@ -16,4 +16,4 @@ if __name__ == "__main__":
     session = Session()
     for instance in (session.query(State.name, City.id, City.name)
                      .filter(State.id == City.state_id)):
-        print(instance[0] + ": (" + str(instance[1]) + ") " + instance[2]) 
+        print(instance[0] + ": (" + str(instance[1]) + ") " + instance[2])
